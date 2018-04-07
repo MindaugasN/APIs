@@ -8,7 +8,7 @@ from resources.item import Item, ItemList
 from resources.store import Store, StoreList
 
 
-HOST = '0.0.0.0'
+# HOST = '0.0.0.0'
 PORT = 5000
 DEBUG = True
 
@@ -34,4 +34,4 @@ api.add_resource(UserRegister, '/register')
 if __name__ == '__main__':
     from db import db
     db.init_app(app)
-    app.run(host=HOST, port=PORT, debug=DEBUG)
+    app.run(port=PORT, debug=DEBUG)
